@@ -1,0 +1,8 @@
+library(wooldridge)
+data(package='wooldridge')
+data("affairs")
+View(affairs)
+summary(lm(naffairs~age, data=affairs))
+plot(affairs$age, affairs$naffairs)
+axis(1, at = seq(18, 80, by = 5))
+abline(lm(naffairs ~ age, data = affairs), col = "red")
