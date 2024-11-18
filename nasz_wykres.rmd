@@ -12,11 +12,17 @@ ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
   theme_minimal()
   
 
+
 view(mpg)
 summary(mpg)
 mean(mpg$year)
 
   
+
+mean(mpg$year)
+
+
+
 ggplot(mpg, aes(x = class)) +
   geom_bar(fill = "skyblue", color = "black") +
   labs(
