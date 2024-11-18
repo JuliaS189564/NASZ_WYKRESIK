@@ -10,3 +10,13 @@ ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
     color = "Rodzaj napędu (drv)"
   ) +
   theme_minimal()
+  
+ggplot(mpg, aes(x = class)) +
+  geom_bar(fill = "skyblue", color = "black") +
+  labs(
+    title = "Liczba samochodów według klasy",
+    x = "Klasa samochodu",
+    y = "Liczba"
+  ) +
+  theme_minimal()
+
