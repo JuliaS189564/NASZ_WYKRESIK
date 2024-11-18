@@ -10,3 +10,8 @@ ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
     color = "Rodzaj napędu (drv)"
   ) +
   theme_minimal()
+
+view(mpg)
+summary(mpg)
+mean(mpg$year)
+
